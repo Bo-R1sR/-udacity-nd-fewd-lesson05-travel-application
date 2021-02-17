@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport"/>
+    <title>Travel Application</title>
+</head>
+
+<body>
+
+<header>
+    <h1>
+        Please enter your
+    </h1>
+    <h2>
+        TRAVEL DETAILS
+    </h2>
+</header>
+
+<main>
+    <section>
+        <form id="inputForm">
+            <label for="postalCode">Postal Code:</label><br>
+            <input id="postalCode" name="postalCode" placeholder="please enter postal code if known"
+                   type="text"><br><br>
+            <label for="location">*Location:</label><br>
+            <input id="location" name="location" placeholder="please enter location" type="text"><br><br>
+            <label for="startDate">*Start Date:</label><br>
+            <input id="startDate" name="startDate" placeholder="please enter start date yyyy-mm-dd" type="date"><br><br>
+            <label for="endDate">*End Date:</label><br>
+            <input id="endDate" name="endDate" placeholder="please enter end date yyyy-mm-dd" type="date"><br><br>
+            <div class="inputRow">
+                <input id="submitButton" type="submit" value="Submit">
+            </div>
+            <div>* required</div>
+        </form>
+    </section>
+
+    <section id="locationResult">
+        <div id="locationText"></div>
+        <img alt="" id="locationImage" src="">
+
+    </section>
+    <section id="weatherResult">
+        <div id="weatherText"></div>
+        <div id="currentWeather">
+            <div id="temperature"></div>
+            <img alt="" id="weatherImage" src="">
+            <div id="weatherDescription"></div>
+        </div>
+    </section>
+    <section id="weatherForecastResult">
+    </section>
+
+</main>
+
+<footer>
+
+</footer>
+<script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
+</body>
+</html>

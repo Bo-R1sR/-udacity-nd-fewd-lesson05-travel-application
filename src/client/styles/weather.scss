@@ -1,0 +1,50 @@
+#temperature {
+  font-size: 50px;
+}
+.temperatureForecast {
+  font-size: 50px;
+}
+
+#weatherImage {
+  width: 60px;
+  height: 60px;
+}
+.weatherForecastImage {
+  width: 60px;
+  height: 60px;
+}
+#currentWeather {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.currentForecastWeather {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+#weatherDescription {
+  font-size: 19px;
+}
+.weatherForecastDate {
+  font-size: 30px;
+  color: white;
+  padding-right: 30px;
+}
+
+#weatherForecastResult {
+  max-width: 350px;
+}
+#weatherForecastText {
+  font-size: 20px;
+  //text-align: center;
+}
+
+#weatherText {
+  font-size: 20px;
+}
